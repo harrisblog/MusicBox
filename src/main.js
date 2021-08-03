@@ -11,6 +11,9 @@ Vue.use(ElementUI)
 // 导入全局初始化样式
 import './assets/index.css'
 
+// 导入全局javascript代码
+import './assets/hassan.js'
+
 // 路由整合
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)

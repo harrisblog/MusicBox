@@ -35,7 +35,7 @@
     </div>
     <!-- 播放标签 -->
     <div class="player">
-      <audio :src="musicUrl" autoplay controls></audio>
+      <audio loop :src="musicUrl" autoplay controls></audio>
     </div>
   </div>
 </template>

@@ -15,7 +15,7 @@
       <a href="https://hassanwong.top/">🍁 我的博客</a>
       <a href="https://navi.hassanwong.top/">🚀 网址导航</a>
       <a href="https://doc.hassanwong.top/">📃 我的文档</a>
-      <a href="https://github.com/hassanblog//MusicBox">🦄 项目源码</a>
+      <a href="https://github.com/hassanblog/MusicBox">🦄 项目源码</a>
     </div>
     <div class="site-name">
       💽 诗颂的八音盒 🎹
