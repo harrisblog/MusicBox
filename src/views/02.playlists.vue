@@ -1,5 +1,5 @@
 <template>
-  <div class="playlists-container">
+  <div class="playlists-container hassan_border_nohover">
     <!-- 同步 -->
     <div class="top-card">
       <div class="icon-wrap">
@@ -17,6 +17,7 @@
       <img :src="topList.coverImgUrl" alt="" class="bg" />
       <div class="bg-mask"></div>
     </div>
+
     <div class="tab-container">
       <!-- tab栏 顶部 -->
       <div class="tab-bar">
@@ -109,7 +110,7 @@
       <div class="tab-content">
         <div class="items">
           <div
-            class="item"
+            class="item hassan_border"
             v-for="(item, index) in playList"
             :key="index"
             @click="toPlayList(item.id)"
@@ -122,7 +123,9 @@
               <img :src="item.coverImgUrl" />
               <span class="iconfont icon-play"></span>
             </div>
-            <p class="name">{{ item.name }}</p>
+            <div style="padding:10px">
+              <p class="name">{{ item.name }}</p>
+            </div>
           </div>
         </div>
       </div>

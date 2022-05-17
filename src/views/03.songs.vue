@@ -1,5 +1,5 @@
 <template>
-  <div class="songs-container">
+  <div class="songs-container hassan_border_nohover">
     <div class="tab-bar">
       <span class="item" :class="{active:tag=='0'}" @click="tag='0'">全部</span>
       <span class="item" :class="{active:tag=='7'}" @click="tag='7'">华语</span>
@@ -10,8 +10,8 @@
     <!-- 底部的table -->
     <table class="el-table playlit-table">
       <thead>
-        <th></th>
-        <th></th>
+        <th>序号</th>
+        <th>MV</th>
         <th>音乐标题</th>
         <th>歌手</th>
         <th>专辑</th>

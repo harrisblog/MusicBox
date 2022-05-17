@@ -1,5 +1,5 @@
 <template>
-  <div class="mvs-container">
+  <div class="mvs-container hassan_border_nohover">
     <div class="filter-wrap">
       <div class="seciton-wrap">
         <span class="section-type">地区:</span>
@@ -63,7 +63,7 @@
     <!-- 推荐MV -->
     <div class="mvs">
       <div class="items">
-        <div class="item"  v-for="(item,index) in list" :key="index" @click="toMv(item.id)">
+        <div class="item hassan_border"  v-for="(item,index) in list" :key="index" @click="toMv(item.id)">
           <div class="img-wrap">
             <img :src="item.cover" alt="" />
             <div class="num-wrap">
