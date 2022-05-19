@@ -172,7 +172,7 @@ export default {
       // 精品歌单
       this.topData();
 
-      //歌单列表  https://autumnfish.cn/top/playlist/
+      //歌单列表 https://music.cyrilstudio.top/top/playlist/
       this.listData();
       this.page = 1;
     },
@@ -182,7 +182,7 @@ export default {
     // 精品歌单
     this.topData();
 
-    //歌单列表  https://autumnfish.cn/top/playlist/
+    //歌单列表 https://music.cyrilstudio.top/top/playlist/
     this.listData();
   },
   methods: {
@@ -194,7 +194,7 @@ export default {
     //顶部数据
     topData() {
       axios({
-        url: "https://autumnfish.cn/top/playlist/highquality",
+        url: "https://music.cyrilstudio.top/top/playlist/highquality",
         method: "get",
         params: {
           limit: 1,
@@ -210,7 +210,7 @@ export default {
     //歌单列表数据
     listData() {
       axios({
-        url: "https://autumnfish.cn/top/playlist/",
+        url: "https://music.cyrilstudio.top/top/playlist/",
         method: "get",
         params: {
           limit: 10,
@@ -236,5 +236,4 @@ export default {
 };
 </script>
 
-<style >
-</style>
+<style></style>

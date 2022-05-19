@@ -27,12 +27,18 @@
             最新MV
           </router-link>
         </li>
+        <li>
+          <router-link to="/hij">
+            <span class="iconfont el-icon-headset"></span>
+            Hassan&Jaggie
+          </router-link>
+        </li>
       </ul>
     </div>
     <!-- 主题区域 -->
     <div class="main">
       <router-view :key="key"></router-view>
-      <Backtop />
+      <Footer />
     </div>
     <!-- 播放标签 -->
     <div class="player">
@@ -42,7 +48,7 @@
 </template>
 
 <script>
-import Backtop from "./Backtop.vue";
+import Footer from "./Footer.vue";
 export default {
   name: "index",
   data() {
@@ -55,6 +61,7 @@ export default {
       return this.$route.path + Math.random();
     },
   },
+  components: { Footer },
 };
 </script>
 

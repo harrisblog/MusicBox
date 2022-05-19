@@ -37,7 +37,12 @@
         最新音乐
       </h2>
       <div class="items">
-        <div class="item hassan_border" @click="play(item.id)" v-for="(item, index) in songs" :key="index">
+        <div
+          class="item hassan_border"
+          @click="play(item.id)"
+          v-for="(item, index) in songs"
+          :key="index"
+        >
           <div class="img-wrap">
             <img :src="item.picUrl" />
             <span class="iconfont icon-play"></span>
@@ -96,16 +101,16 @@ export default {
   created() {
     //轮播图接口
     axios({
-      url: "https://autumnfish.cn/banner",
+      url: "https://music.cyrilstudio.top/banner",
       method: "get",
     }).then((res) => {
       console.log(res);
       this.banners = res.data.banners;
     });
 
-    //推荐歌单 https://autumnfish.cn/personalized
+    //推荐歌单https://music.cyrilstudio.top/personalized
     axios({
-      url: "https://autumnfish.cn/personalized",
+      url: "https://music.cyrilstudio.top/personalized",
       method: "get",
       params: {
         limit: 10,
@@ -115,17 +120,17 @@ export default {
       this.list = res.data.result;
     });
 
-    //最新音乐  https://autumnfish.cn/personalized/newsong
+    //最新音乐 https://music.cyrilstudio.top/personalized/newsong
     axios({
-      url: "https://autumnfish.cn/personalized/newsong",
+      url: "https://music.cyrilstudio.top/personalized/newsong",
       method: "get",
     }).then((res) => {
       console.log(res);
       this.songs = res.data.result;
     });
-    //推荐mv https://autumnfish.cn/personalized/mv
+    //推荐mvhttps://music.cyrilstudio.top/personalized/mv
     axios({
-      url: "https://autumnfish.cn/personalized/mv",
+      url: "https://music.cyrilstudio.top/personalized/mv",
       method: "get",
     }).then((res) => {
       console.log(res);
@@ -136,7 +141,7 @@ export default {
     //播放
     play(id) {
       axios({
-        url: "https://autumnfish.cn/song/url",
+        url: "https://music.cyrilstudio.top/song/url",
         method: "get",
         params: {
           id,

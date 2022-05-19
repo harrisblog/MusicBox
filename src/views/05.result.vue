@@ -138,7 +138,7 @@ export default {
       }
 
       axios({
-        url: " https://autumnfish.cn/search",
+        url: "https://music.cyrilstudio.top/search",
         method: "get",
         params: {
           keywords: this.$route.query.query,
@@ -210,7 +210,7 @@ export default {
     //搜索
     search() {
       axios({
-        url: " https://autumnfish.cn/search",
+        url: "https://music.cyrilstudio.top/search",
         method: "get",
         params: {
           keywords: this.$route.query.query,
@@ -254,7 +254,7 @@ export default {
     //播放
     playMusic(id) {
       axios({
-        url: "https://autumnfish.cn/song/url",
+        url: "https://music.cyrilstudio.top/song/url",
         method: "get",
         params: {
           id, // id:id
@@ -282,7 +282,7 @@ export default {
       console.log(`当前页: ${val}`);
       this.page = val;
       axios({
-        url: " https://autumnfish.cn/search",
+        url: "https://music.cyrilstudio.top/search",
         method: "get",
         params: {
           keywords: this.$route.query.query,
@@ -349,5 +349,4 @@ export default {
 };
 </script>
 
-<style >
-</style>
+<style></style>

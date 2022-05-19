@@ -17,6 +17,9 @@ html {
 }
 
 * {
+  -moz-box-sizing: border-box; /*Firefox3.5+*/
+  -webkit-box-sizing: border-box; /*Safari3.2+*/
+  -o-box-sizing: border-box; /*Opera9.6*/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -210,6 +213,7 @@ ol {
 .discovery-container .recommend .items .item img {
   width: 210px;
   height: 190px;
+  object-fit: cover;
 }
 
 .discovery-container .recommend .items .item .desc-wrap {
@@ -802,10 +806,11 @@ ol {
 .playlists-container,
 .songs-container,
 .mvs-container,
-.result-container {
+.result-container,
+.hij-container {
   margin: auto;
   padding: 30px;
-  padding-top: 40px;
+  min-height: calc(100vh - 384px);
 }
 
 .playlist-container .top-wrap {
@@ -995,7 +1000,7 @@ ol {
   width: 100px;
   height: 30px;
   text-align: center;
-
+  border-radius: 10px;
   font-size: 16px;
   line-height: 30px;
   cursor: pointer;
@@ -1078,6 +1083,7 @@ ol {
 .playlists-container .tab-container .tab-content .items .item img {
   width: 210px;
   height: 190px;
+  object-fit: cover;
 }
 .playlists-container .tab-container .tab-content .items .item:hover img {
   transform: scale(1.1);
@@ -1391,7 +1397,6 @@ ol {
 .index-container .main {
   flex: 1;
   overflow-y: scroll;
-  padding: 10px 20px;
   background: var(--hassan-bg);
 }
 
@@ -1487,4 +1492,41 @@ ol {
 .el-pagination li:not(.active):hover {
   border-color: var(--hassan-theme) !important;
   color: var(--hassan-theme) !important;
+}
+
+/* 分隔符 */
+.separator {
+  margin: 0 20px !important;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 11px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hassan-theme);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  border-color: transparent;
 }
