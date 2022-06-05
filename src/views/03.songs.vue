@@ -85,7 +85,6 @@ export default {
           type: this.tag,
         },
       }).then((res) => {
-        console.log(res);
         this.list = res.data.data;
         //处理时长
         //假定  350750  毫秒

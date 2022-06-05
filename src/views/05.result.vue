@@ -147,7 +147,6 @@ export default {
           type: this.type,
         },
       }).then((res) => {
-        console.log(res);
         if (this.type == 1) {
           this.songList = res.data.result.songs;
           this.songCount = res.data.result.songCount;
@@ -220,7 +219,6 @@ export default {
         },
       }).then(
         (res) => {
-          console.log(res);
           //判断搜索内容是否报错  例如搜索了不该搜索的内部
           if (res.data.hasOwnProperty("msg")) {
             this.$message({
@@ -291,7 +289,6 @@ export default {
           type: this.type,
         },
       }).then((res) => {
-        console.log(res);
         if (this.type == 1) {
           this.songList = res.data.result.songs;
           this.songCount = res.data.result.songCount;

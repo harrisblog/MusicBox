@@ -185,7 +185,6 @@ export default {
         id: this.$route.query.id,
       },
     }).then((res) => {
-      console.log(res);
       this.detail = res.data.playlist;
       let arr = this.detail.tracks;
       for (let i = 0; i < arr.length; i++) {
@@ -212,7 +211,6 @@ export default {
         type: 2,
       },
     }).then((res) => {
-      console.log(res);
       this.hotComments = res.data.hotComments;
       this.hotTotal = res.data.total;
 
@@ -263,7 +261,6 @@ export default {
           offset: (this.page - 1) * this.limit,
         },
       }).then((res) => {
-        console.log(res);
         this.comTotal = res.data.total;
         this.total = res.data.total;
 

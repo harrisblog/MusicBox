@@ -153,7 +153,7 @@ export default {
         id: this.$route.query.id,
       },
     }).then((res) => {
-      // console.log(res);
+      //
       this.url = res.data.data.url;
     });
     //mv信息
@@ -164,7 +164,7 @@ export default {
         mvid: this.$route.query.id,
       },
     }).then((res) => {
-      //console.log(res);
+      //
       this.mvData = res.data.data;
     });
     //mv评论
@@ -177,7 +177,7 @@ export default {
         offset: (this.page - 1) * this.limit,
       },
     }).then((res) => {
-      //console.log(res);
+      //
       this.hotComments = res.data.hotComments;
       this.hotTotal = this.hotComments.length;
       this.comments = res.data.comments;
@@ -191,7 +191,6 @@ export default {
         mvid: this.$route.query.id,
       },
     }).then((res) => {
-      console.log(res);
       this.mvs = res.data.mvs;
       for (let i = 0; i < this.mvs.length; i++) {
         if (this.mvs[i].playCount > 100000) {
@@ -227,7 +226,6 @@ export default {
           offset: (this.page - 1) * this.limit,
         },
       }).then((res) => {
-        console.log(res);
         this.hotComments = res.data.hotComments;
         this.comments = res.data.comments;
       });

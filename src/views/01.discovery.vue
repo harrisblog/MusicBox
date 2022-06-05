@@ -104,7 +104,6 @@ export default {
       url: "https://music.cyrilstudio.top/banner",
       method: "get",
     }).then((res) => {
-      console.log(res);
       this.banners = res.data.banners;
     });
 
@@ -116,7 +115,6 @@ export default {
         limit: 10,
       },
     }).then((res) => {
-      console.log(res);
       this.list = res.data.result;
     });
 
@@ -125,7 +123,6 @@ export default {
       url: "https://music.cyrilstudio.top/personalized/newsong",
       method: "get",
     }).then((res) => {
-      console.log(res);
       this.songs = res.data.result;
     });
     //推荐mvhttps://music.cyrilstudio.top/personalized/mv
@@ -133,7 +130,6 @@ export default {
       url: "https://music.cyrilstudio.top/personalized/mv",
       method: "get",
     }).then((res) => {
-      console.log(res);
       this.mv = res.data.result;
     });
   },
@@ -147,7 +143,6 @@ export default {
           id,
         },
       }).then((res) => {
-        console.log(res);
         let url = res.data.data[0].url;
         //设置给父组件的 播放地址
         this.$parent.musicUrl = url;

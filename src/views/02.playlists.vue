@@ -201,7 +201,6 @@ export default {
           cat: this.tag,
         },
       }).then((res) => {
-        console.log(res);
         if (res.data.playlists.length != 0) {
           this.topList = res.data.playlists[0];
         }
@@ -220,7 +219,6 @@ export default {
           cat: this.tag,
         },
       }).then((res) => {
-        console.log(res);
         this.total = res.data.total;
         this.playList = res.data.playlists;
       });

@@ -221,7 +221,6 @@ export default {
           offset: (this.page - 1) * this.limit,
         },
       }).then((res) => {
-        console.log(res);
         this.list = res.data.data;
         //整理次数
         for (let i = 0; i < this.list.length; i++) {
