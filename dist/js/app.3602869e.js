@@ -152,13 +152,13 @@
             s = t.$createElement,
             a = t._self._c || s;
           return a("div", { staticClass: "left-box" }, [
-            a("a", { attrs: { href: "https://hassanwong.top/" } }, [
+            a("a", { attrs: { href: "https://blog.harriswong.top/" } }, [
               t._v("🍁 我的博客"),
             ]),
-            a("a", { attrs: { href: "https://navi.hassanwong.top/" } }, [
+            a("a", { attrs: { href: "https://navi.harriswong.top/" } }, [
               t._v("🚀 网址导航"),
             ]),
-            a("a", { attrs: { href: "https://doc.hassanwong.top/" } }, [
+            a("a", { attrs: { href: "https://doc.harriswong.top/" } }, [
               t._v("📃 我的文档"),
             ]),
             a(

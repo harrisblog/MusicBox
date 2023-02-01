@@ -3,14 +3,14 @@
     <div id="footer-banner">
       <div class="footer-banner-links">
         <div class="footer-banner-left">
-          <div id="footer-banner-tips"/>
+          <div id="footer-banner-tips" />
         </div>
         <div class="footer-banner-right">
           <p>Since 2022</p>
           <p class="separator">|</p>
-          <p>Designed and Developed by HassanWong</p>
-          <!-- <a class="footer-banner-link" href="https://hassanwong.top"
-            >黄诗颂 HassanWong</a
+          <p>Designed and Developed by HarrisWong</p>
+          <!-- <a class="footer-banner-link" href="https://harriswong.top"
+            >HarrisWong</a
           > -->
           <p class="separator">|</p>
           <p>Dedicated to JaggieWong</p>
@@ -30,7 +30,7 @@ export default {
         strings: [
           "谢谢你让我听见~",
           "因为我在等待永远~",
-          "Hassan Always Love Jaggie",
+          "Harris Always Love Jaggie",
         ],
         startDelay: 200,
         backDelay: 2e3,

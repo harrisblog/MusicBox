@@ -74,10 +74,10 @@ const router = new VueRouter({
       path: "/result",
       component: result,
     },
-    // Hassan&Jaggie
+    // Harris&Jaggie
     {
       path: "/hij",
-      component: () => import("./views/hij.vue")
+      component: () => import("./views/hij.vue"),
     },
   ],
 });

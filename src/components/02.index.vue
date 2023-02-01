@@ -30,7 +30,7 @@
         <li>
           <router-link to="/hij">
             <span class="iconfont el-icon-headset"></span>
-            Hassan&Jaggie
+            Harris&Jaggie
           </router-link>
         </li>
       </ul>
