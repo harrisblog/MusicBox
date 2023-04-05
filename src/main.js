@@ -12,7 +12,7 @@ Vue.use(ElementUI);
 import "./static/css/index.css";
 
 // 导入全局javascript代码
-import "./static/js/hassan.js";
+import "./static/js/harris.js";
 
 // 路由整合
 import VueRouter from "vue-router";

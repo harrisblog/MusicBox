@@ -163,7 +163,7 @@
             ]),
             a(
               "a",
-              { attrs: { href: "https://github.com/hassanblog//MusicBox" } },
+              { attrs: { href: "https://github.com/harrisblog//MusicBox" } },
               [t._v("🦄 项目源码")]
             ),
           ]);
