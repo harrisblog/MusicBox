@@ -1,5 +1,5 @@
 <template>
-  <div class="discovery-container hassan_border_nohover">
+  <div class="discovery-container harris_border_nohover">
     <!-- 轮播图 -->
     <el-carousel class="" :interval="4000" type="card">
       <el-carousel-item v-for="(item, index) in banners" :key="index">
@@ -13,7 +13,7 @@
       </h2>
       <div class="items">
         <div
-          class="item hassan_border"
+          class="item harris_border"
           v-for="(item, index) in list"
           :key="index"
           @click="toPlayList(item.id)"
@@ -38,7 +38,7 @@
       </h2>
       <div class="items">
         <div
-          class="item hassan_border"
+          class="item harris_border"
           @click="play(item.id)"
           v-for="(item, index) in songs"
           :key="index"
@@ -59,7 +59,7 @@
       <h2 class="title">推荐MV</h2>
       <div class="items">
         <div
-          class="item hassan_border"
+          class="item harris_border"
           v-for="(item, index) in mv"
           :key="index"
           @click="toMv(item.id)"

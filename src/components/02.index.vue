@@ -30,7 +30,7 @@
         <li>
           <router-link to="/hij">
             <span class="iconfont el-icon-headset"></span>
-            Harris&Jaggie
+            Harris
           </router-link>
         </li>
       </ul>

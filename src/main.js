@@ -74,10 +74,9 @@ const router = new VueRouter({
       path: "/result",
       component: result,
     },
-    // Harris&Jaggie
     {
-      path: "/hij",
-      component: () => import("./views/hij.vue"),
+      path: "/harris",
+      component: () => import("./views/harris.vue"),
     },
   ],
 });

@@ -1,5 +1,5 @@
 <template>
-  <div class="playlists-container hassan_border_nohover">
+  <div class="playlists-container harris_border_nohover">
     <!-- 同步 -->
     <div class="top-card">
       <div class="icon-wrap">
@@ -110,7 +110,7 @@
       <div class="tab-content">
         <div class="items">
           <div
-            class="item hassan_border"
+            class="item harris_border"
             v-for="(item, index) in playList"
             :key="index"
             @click="toPlayList(item.id)"

@@ -1,5 +1,5 @@
 <template>
-  <div class="mvs-container hassan_border_nohover">
+  <div class="mvs-container harris_border_nohover">
     <div class="filter-wrap">
       <div class="seciton-wrap">
         <span class="section-type">地区:</span>
@@ -134,7 +134,7 @@
     <div class="mvs">
       <div class="items">
         <div
-          class="item hassan_border"
+          class="item harris_border"
           v-for="(item, index) in list"
           :key="index"
           @click="toMv(item.id)"

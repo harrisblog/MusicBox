@@ -12,8 +12,6 @@
           <!-- <a class="footer-banner-link" href="https://harriswong.top"
             >HarrisWong</a
           > -->
-          <p class="separator">|</p>
-          <p>Dedicated to JaggieWong</p>
         </div>
       </div>
     </div>
@@ -27,11 +25,7 @@ export default {
   methods: {
     typed_cursor() {
       var typed = new Typed("#footer-banner-tips", {
-        strings: [
-          "谢谢你让我听见~",
-          "因为我在等待永远~",
-          "Harris Always Love Jaggie",
-        ],
+        strings: ["谢谢你让我听见~", "因为我在等待永远~"],
         startDelay: 200,
         backDelay: 2e3,
         typeSpeed: 100,
@@ -58,7 +52,7 @@ footer {
 #footer-banner {
   padding: 1rem;
   color: #fff;
-  background: linear-gradient(270deg, var(--hassan-theme) 0, #7ada1b 100%);
+  background: linear-gradient(270deg, var(--harris-theme) 0, #7ada1b 100%);
   display: flex;
   overflow: hidden;
 }

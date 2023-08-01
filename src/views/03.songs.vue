@@ -1,5 +1,5 @@
 <template>
-  <div class="songs-container hassan_border_nohover">
+  <div class="songs-container harris_border_nohover">
     <div class="tab-bar">
       <span class="item" :class="{ active: tag == '0' }" @click="tag = '0'"
         >全部</span

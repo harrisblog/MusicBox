@@ -1,5 +1,5 @@
 <template>
-  <div class="playlist-container hassan_border_nohover">
+  <div class="playlist-container harris_border_nohover">
     <div class="top-wrap">
       <div class="img-wrap">
         <img :src="detail.coverImgUrl" />

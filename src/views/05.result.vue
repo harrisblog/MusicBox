@@ -1,5 +1,5 @@
 <template>
-  <div class="result-container hassan_border_nohover">
+  <div class="result-container harris_border_nohover">
     <div class="title-wrap">
       <!-- 标题 -->
       <h2 class="title">{{ $route.query.query }}</h2>
